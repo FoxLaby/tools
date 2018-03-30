@@ -1,0 +1,19 @@
+{
+  "name": "foxlaby",
+  "version": "0.0.1",
+  "description": "The tools through which we develop our work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "foxlaby": "./foxlaby.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.2.1",
+    "execa": "^0.10.0",
+    "ncp": "^2.0.0"
+  }
+}
