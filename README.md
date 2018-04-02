@@ -17,3 +17,7 @@ Create a folder named Project
 ```
 $ foxlaby new ngjs <APPNAME>
 ```
+Install packages
+```
+$ bower install
+```
