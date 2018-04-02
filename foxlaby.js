@@ -3,8 +3,7 @@
 var path = require("path"),
     fs = require("fs"),
     colors = require('colors'),
-    ncp = require('ncp').ncp,
-    execa = require('execa');
+    ncp = require('ncp').ncp;
 
 var allProcess = process.argv;
 var pathApp = __dirname + '\\app\\ngjs\\';
@@ -20,12 +19,6 @@ var ngjs = function(destination_name = false)
             return console.error(err);
         }
         console.log('Exiting files'.green); 
-        execa.shell('bower install').then(result => {
-            console.log('installed bower'.green);
-            execa.shell('npm install').then(result => {
-                console.log('installed npm'.green);
-            });
-        });
     });
 }
 
